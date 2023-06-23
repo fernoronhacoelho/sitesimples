@@ -1,0 +1,59 @@
+/* Os textos e imagens originais deste curso estão sob licença Creative Commons BY NC-SA, 
+que permite reuso como cópia, adaptação, distribuição, desde que não tenha finalidade comercial e sempre citando a fonte. 
+Como citar essa obra: Escola Virtual da Fundação Bradesco - Curso Crie um site simples usando HTML, CSS e JavaScript*/
+/*
+Autor: Fernanda Noronha
+Data de atualização: 13/03/2023
+Versão: 1.0
+*/
+body{
+    font-family: monospace;
+}
+ul{
+    font-family: helvetica;
+}
+li{
+    list-style: circle;
+}
+.list{
+    list-style: square;
+}
+
+:root{
+    --green: #00FF00;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+.dark-theme{
+    --bg:var(--black);
+    --fontColor: var(--green);
+    --btnBg:var(--white);
+    --btnFontColor:var(--black);
+}
+.light-theme{
+    --bg: var(--green);
+    --fontColor:var(--black);
+    --btnBg:var(--black);
+    --btnFontColor:var(--white);
+}
+*{
+    color: var(--fontColor);
+    font-family: helvetica;
+}
+body{
+    background: var(--bg);
+}
+
+.btn{
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
+.btn:focus{ outline-style: none;}
